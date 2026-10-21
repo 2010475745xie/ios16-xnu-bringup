@@ -1,0 +1,35 @@
+# ---- Apple artefacts: never commit these ----
+*.ipsw
+*.dmg
+*.adt
+*.im4p
+*.im4m
+kernel.development.*
+dyld_shared_cache_*
+
+# ---- build output ----
+*.img
+*.simg
+*.bin
+*.o
+*.elf
+*.zip
+*.tar.gz
+out/
+work/
+research/
+dtb/
+backup/
+payload/
+
+# ---- host tooling ----
+wsl-hfsplus-bzImage
+ipsw
+WSL2-Linux-Kernel/
+
+# ---- OS cruft ----
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+*.log
