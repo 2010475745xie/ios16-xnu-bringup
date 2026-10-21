@@ -107,6 +107,13 @@ moves from `kdp_core zlib memory 0x8000` to
   has no UFS, its `CNTFRQ` is 62.5 MHz instead of the board's 19.2 MHz, and the
   debug UART address is unmapped. Kernel-only verification is the goal.
 
+## If you came here looking for "Hackios"
+
+This repository is unrelated to that project. Hackios is a separate effort
+(OOSexGang) that has published no code; this one descends from
+`dipa-studio/ios-sweet` and contains only host-side tooling. If you want a
+working starting point today, the ports listed below are what actually exists.
+
 ## Upstream projects this builds on
 
 | Project | Device | Notes |
