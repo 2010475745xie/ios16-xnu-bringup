@@ -71,6 +71,10 @@ analysis/    多个移植项目的横向对比和一次故障诊断
 
 ## 我们找到的那个真实缺陷
 
+> **状态：已合并进上游。** 修复于 2026-10-21 合入
+> [`dipa-studio/ios-sweet#6`](https://github.com/dipa-studio/ios-sweet/pull/6)
+> （commit `1664d638`），下面的 diff 留作参考。
+
 `dipa-studio/ios-sweet` 的 `tools/mkadt.py` 从不生成 panic log 区域。于是 XNU 的 `pexpert/arm/pe_init.c:check_for_panic_log()` 让 `gPanicBase == 0`，`debug_log_init()` 放弃初始化，内核在 `kdp_init` 里停止推进：
 
 ```

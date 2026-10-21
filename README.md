@@ -75,6 +75,10 @@ analysis/    cross-project comparisons and one failure diagnosis
 
 ## The one real bug we found
 
+> **Status: merged upstream.** This landed in
+> [`dipa-studio/ios-sweet#6`](https://github.com/dipa-studio/ios-sweet/pull/6)
+> on 2026-10-21 (commit `1664d638`). The diff is kept here for reference.
+
 `dipa-studio/ios-sweet`'s `tools/mkadt.py` never emits a panic log region. XNU's
 `pexpert/arm/pe_init.c:check_for_panic_log()` therefore leaves `gPanicBase == 0`,
 `debug_log_init()` bails out, and the kernel stops making progress inside

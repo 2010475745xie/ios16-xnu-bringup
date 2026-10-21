@@ -1,7 +1,13 @@
 # Patches
 
 Fixes for upstream projects, as unified diffs against the version they were
-written for. Apply with:
+written for.
+
+| Patch | Status |
+|---|---|
+| `mkadt-panic-region.diff` | ✅ **Merged upstream** — [`dipa-studio/ios-sweet#6`](https://github.com/dipa-studio/ios-sweet/pull/6), 2026-10-21 (commit `1664d638`) |
+
+Apply with:
 
 ```bash
 cd <upstream checkout>
