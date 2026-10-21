@@ -1,3 +1,5 @@
+**English** · [简体中文](README.zh-CN.md)
+
 # ios16-xnu-bringup
 
 Build notes and tooling for getting Apple's XNU kernel plus an iOS 16 userland
